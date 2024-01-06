@@ -1,0 +1,1 @@
+Welcome to the Mini Project website for Packet Sniffer and Anomaly Detector. This project showcases a simple yet powerful tool designed for network analysis and security. The combination of a packet sniffer and anomaly detector provides users with insights into network traffic and identifies potential security threats.
