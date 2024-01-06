@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create command</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <td><img align="left" src="Images/image 1.png" class="logo" width="70px" height="70px" ></td>
+            </td>
+            <td>
+                <h1 class="random">Packet Sniffer and Anomaly Detector</h1>
+    </table>
+    <table bordercolor="black">
+        <tr style="width:230px">
+            <td style="width:500px"><a href="main.html"><button class="button">Home</button></a></td>
+            <td style="width:500px"><a href="create_command.html"><button class="button">Create Command</button></a></td>
+            <td style="width:500px"><a href="output_page.html"><button class="button">Output Page</button></a></td>
+            <td style="width:500px"><a href="visualization.html"><button class="button">Visualization</button></a></td>
+        </tr>
+    </table><br>
+    <font size="5.5">
+        <center>
+            <p class="para_cmd"><b>Select the filter for TCP DUMP command</b></p>
+        </center>
+    </font>
+
+    <div class="head">
+    <h2 >TCPDump Command Generator</h2>
+
+    <form id="tcpdumpForm">
+       <!----> <label for="interface">Interface:</label>
+        <td style="width:100px">
+            <select name="eth_port" id="interface">
+                <option value="">-</option>
+                <option value="all">All</option>
+                <option value="eth0">Eth0</option>
+                <option value="eth1">Eth1</option>
+                <option value="eth2">Eth2</option>
+                <option value="usb1">usbman1</option>
+                <option value="usb2">usbman2</option>
+            </select><br><br>
+        </td>
+        <label for="expression">Filter Expression:</label>
+        <input type="text" id="expression" name="expression" value="tcp port 80" required><br><br>
+
+        <label for="outputFile">Output File Name :</label>
+        <input type="text" id="outputFile" name="outputFile"><br><br>
+
+        <label for="count">Packet Count :</label>
+        <input type="number" id="count" name="count" min="1"><br><br>
+
+        <label for="size">Packet Size :</label>
+        <input type="number" id="size" name="size" min="1"><br><br>
+
+        <label for="verbose">Verbose Level (0-3):</label>
+        <input type="number" id="verbose" name="verbose" min="0" max="3"><br><br>
+
+        <label for="promiscuous">Promiscuous Mode :</label>
+        <input type="checkbox" id="promiscuous" name="promiscuous"><br><br>
+
+        <tr style="height:50px">
+            <td>
+                <label for="Save">Save Packets</label>
+            </td>
+            <td style="width:450px">
+                <input type="checkbox" name="" value="">
+            </td>
+        </tr><br>
+
+        <button class="button_cmd" type="button" onclick="generateCommand()">Generate TCPDump Command</button>
+         <p id="result"></p><br>     
+</div>
+<a class="btn_op" type="button" href="output_page.html">Generate Output Page</a>
+   
+    <td style="width:500px"><img align="right" src="Images/image 2.png" class="logo_cmd" width="400px" height="300px" ></td>
+    <script>
+        var generatedCommand = "";
+        function generateCommand() {
+            var interface = document.getElementById("interface").value;
+            var expression = document.getElementById("expression").value;
+            var outputFile = document.getElementById("outputFile").value;
+            var count = document.getElementById("count").value;
+            var size = document.getElementById("size").value;
+            var verbose = document.getElementById("verbose").value;
+            var promiscuous = document.getElementById("promiscuous").checked;
+
+            var command = "tcpdump";
+            
+            if (interface) {
+                command += ` -i ${interface}`;
+            }
+
+            if (expression) {
+                command += ` ${expression}`;
+            }
+
+            if (outputFile) {
+                command += ` -w ${outputFile}`;
+            }
+
+            if (count) {
+                command += ` -c ${count}`;
+            }
+
+            if (size) {
+                command += ` -s ${size}`;
+            }
+
+            if (verbose) {
+                command += ` -v${verbose}`;
+            }
+
+            if (promiscuous) {
+                command += " -p";
+            }
+            
+            document.getElementById("result").innerHTML = "TCPDump Command: " + command;
+            generatedCommand = command;
+        }
+    </script>
+
+      
+</body>
+</html>
+</body>
+</html>

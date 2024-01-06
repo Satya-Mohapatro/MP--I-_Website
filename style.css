@@ -1,0 +1,263 @@
+  body{
+    background:#59b1a9; 
+  }
+  table {
+    padding-left: 10px;
+    padding-right: 40px;
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #fff; 
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;  
+  }
+  .button:hover
+  {
+    opacity: 0.8;
+  }
+  .button:hover
+  {
+    opacity: 0.5;
+  }
+
+.para{
+    padding-left: 100px; 
+    text-align: center;
+    font-weight:bold;
+    font-family: Roboto,ui-sans-serif,system-ui,-apple-system,Segoe UI,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+    .section1{
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #BC7AF9;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 1100px;
+  height: 150px;
+}
+.section1 p{
+  margin-left: 80px;
+}
+.section2{
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #8CABFF;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 1100px;
+  height: 150px;
+  text-align: left;
+}
+.section2 li{
+  margin-left: 80px;
+}
+.section3{
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fb7c7c;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 1100px;
+  height: 150px;
+}
+.section3 li{
+  margin-left: 80px;
+}
+.circular{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.heading{
+  border-style: none ;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width:5px;
+  width:5%;
+}
+.space{
+  padding-left: 4%;
+}
+.filter_box{
+  background-color: #9cb6fe;
+  margin-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 15px;
+  width: 180px;
+  height: 40px;
+}
+.ano_box{
+  background-color: #90d991;
+  width: 250px;
+  height: 40px;
+  margin-top: 40%;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-top: 18px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.logo_cmd
+{
+  position:absolute;
+  right: 10%;
+  top: 40%;
+  border-radius: 10px;
+}
+.head
+{
+  position:absolute;
+  left: 10%;
+  font-weight:bold;
+  top: 33%;
+}
+.para_cmd{
+  padding-left: 00px; 
+  text-align: center;
+  font-weight:bold;
+  font-family: Roboto,ui-sans-serif,system-ui,-apple-system,Segoe UI,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  margin-top: 2px;
+}
+.button_cmd {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000; 
+  color: #fff; 
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0px;  
+}
+.button_cmd:hover
+{
+  opacity: 0.8;
+}
+.button_cmd:hover
+{
+  opacity: 0.5;
+}
+#result
+{
+  border: 1px solid #fff;
+  background:#fff;
+}
+
+.btn_op {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000; 
+  color: #fff; 
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin: 0px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;  
+  margin-left: 830px;
+  margin-top: 360px
+}
+.btn_op:hover
+{
+  opacity: 0.8;
+}
+.btn_op:hover
+{
+  opacity: 0.5;
+}
+
+.logo
+{
+  position:absolute;
+  border:1 solid;
+  border-radius: 50px;
+  top: 1%;
+  left: 1%;
+}
+
+.random
+{
+  margin-left: 70px;
+  margin-top: 10px ;
+}
+
+.logo2
+{
+  position:absolute;
+  border:1 solid;
+  border-radius: 10px;
+  margin-left: -100px;
+  margin-top: -105px ;
+
+}
+
+.btn_AD {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000; 
+  color: #fff; 
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin: 0px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;  
+  margin-left: 0px;
+  margin-top: 0px
+}
+.btn_AD:hover
+{
+  opacity: 0.8;
+}
+.btn_AD:hover
+{
+  opacity: 0.5;
+}
+.logo_vis
+{
+  position:absolute;
+  right:25%;
+  top: 35%;
+  border-radius: 10px;
+}
